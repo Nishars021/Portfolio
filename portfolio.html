@@ -92,7 +92,7 @@
         <div class="sub2">
             <h1 id="heading1">Nisha</h1>
             <h1>B.Tech in CSE</h1>
-            <h1 id="heading3">Studying in <span style="color:green">Amity University</span></h1>
+            <h1 id="heading3">Studying in <span id="span" style="color:green">Amity University</span></h1>
             <button id="b1" onclick="changecontent()">Explore</button>
         </div>
         <div class="sub3" id="sub3">
@@ -104,16 +104,11 @@
     </div>
 </body>
 <script>
-    // Initial state: show the first image (`sub3`) and hide the second (`sub4`)
-    document.getElementById("sub3").style.display = "block";
-    document.getElementById("sub4").style.display = "none";
-
     function changecontent(){
+        document.getElementById("span").innerHTML="Bengaluru"
+        document.getElementById("span").style.color = "red";
         document.getElementById("sub3").style.display = "none";
         document.getElementById("sub4").style.display = "block";
     }
-
-    // Attach the click handler to the button
-    document.getElementById("b1").addEventListener("click", changecontent);
 </script>
 </html>
