@@ -65,7 +65,8 @@
             border: solid blue 4px;
             border-radius: 100px 20px 100px 20px;
         }
-         .sub3{
+         .sub4{
+            display:none;
             position: absolute;
             top:30vh;
             right:17vw;
@@ -74,7 +75,7 @@
             background-color: white;
             border-radius: 100px 20px 100px 20px;
         }
-        .sub3 img{
+        .sub4 img{
             margin-left: 5%;
             margin-top: 14px;
             width :90%;
@@ -92,16 +93,17 @@
             <h1 id="heading1">Nisha</h1>
             <h1>B.Tech in CSE</h1>
             <h1 id="heading3">Studying in <span style="color:green">Amity University</span></h1>
-            <button id="b1">Explore</button>
+            <button id="b1" onclick="changecontent">Explore</button>
         </div>
         <div class="sub3">
-            <img src="https://thecollegesphere.com/wp-content/uploads/2025/07/amity-university-bangalore.jpg" alt="">
+            <img src="https://www.bmu.edu.in/wp-content/uploads/2024/09/Code-your-Future-with-BTech-Computer-Science.webp" alt="">
         </div>
         <div class="sub4">
             <img src="https://thecollegesphere.com/wp-content/uploads/2025/07/amity-university-bangalore.jpg" alt="">
-        </div>
-        
-
-    </div>
 </body>
+<script>
+    function changecontent(){}
+    document.getElementById("sub3").style.display="none"
+    document.getElementById("sub4").style.display="block"
+</script>
 </html>
